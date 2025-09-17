@@ -140,8 +140,3 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
-
-td[style*="vertical-align:middle"] {
-    display: flex;
-    align-items: center;
-}
