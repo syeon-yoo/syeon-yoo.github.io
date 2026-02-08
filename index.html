@@ -70,6 +70,52 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    
+    <tr onmouseout="readygo_stop()" onmouseover="readygo_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle;">
+        <div class="one">
+          <div class="two" id='readygo_image'>
+            <video style="object-fit: cover;" width=100% height=100% muted autoplay loop>
+              <source src="images/readygo_teaser.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video></div>
+          <img src='images/readygo.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function readygo_start() {
+            document.getElementById('readygo_image').style.opacity = "1";
+          }
+
+          function readygo_stop() {
+            document.getElementById('readygo_image').style.opacity = "0";
+          }
+          readygo_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://syeon-yoo.github.io/ready-go-site/">
+          <span class="papertitle">ReaDy-Go: Real-to-Sim Dynamic 3D Gaussian Splatting Simulation for Environment-Specific Visual Navigation with Moving Obstacles</span>
+        </a>
+        <br>
+		    <strong>Seungyeon Yoo</strong>,
+        Youngseok Jang, Dabin Kim, Youngsoo Han, Seungwoo Jung, H. Jin Kim
+        <br>
+        <em>coming soon</em>, 2026
+        <br>
+        <a href="https://syeon-yoo.github.io/ready-go-site/">project page</a>
+        /
+        <a href="https://syeon-yoo.github.io/ready-go-site/">paper (coming soon)</a>
+        <!-- /
+        <a href="https://syeon-yoo.github.io/ready-go-site/">video</a>
+        /
+        <a href="https://github.com/syeon-yoo/ready-go">code</a> -->
+        <p></p>
+        <p>
+		    ReaDy-Go generates photorealistic navigation datasets for dynamic environments by combining a reconstructed static GS scene with dynamic human GS obstacles, and trains policies robust to both the sim-to-real gap and moving obstacles.
+        </p>
+      </td>
+    </tr>
+
 
     <tr onmouseout="sincro_stop()" onmouseover="sincro_start()">
       <td style="padding:16px;width:20%;vertical-align:middle;">
