@@ -34,7 +34,7 @@
                 </p>
                 <p>
     I am a Ph.D. candidate at Seoul National University, advised by <a href="https://larr.snu.ac.kr/">Prof. H. Jin Kim</a>.
-    My research interests include robot AI, vision-based navigation, and visual representation learning.
+    My research interests include robot learning, vision-based navigation, and visual representation learning.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:syeon.yoo@snu.ac.kr">Email</a> &nbsp;/&nbsp;
@@ -56,10 +56,11 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research focuses on building RGB-only autonomous robot systems. I have been exploring GS-based real-to-sim data generation to address the sim-to-real gap, monocular-camera-based target chasing through cross-modal learning, and single-view RL manipulation leveraging NeRF.
-                  I apply these approaches across diverse robot platforms, including drones, manipulators, and ground robots.
+                  My research focuses on building RGB-only autonomous robot systems. I have been exploring photorealistic real-to-sim data generation for robust sim-to-real transfer of RGB-only policies, monocular target chasing via cross-modal representation learning, and single-view manipulation with 3D-aware representation learning.
+                  I apply these approaches on drones, manipulators, and ground robots.
+                  I am currently extending real-to-sim simulation to humanoid loco-manipulation, in collaboration with NVIDIA Research.
                   I believe that RGB-focused robot systems can serve as a key pathway toward realizing human-level intelligence in robotics.
-                  Selected publications are <span class="highlight">highlighted</span>.
+                  Key publications are <span class="highlight">highlighted</span> below.
                 </p>
               </td>
             </tr>
@@ -111,6 +112,45 @@
         <p>
 		    ReaDy-Go generates photorealistic navigation datasets for dynamic environments by combining a reconstructed static GS scene with dynamic human GS obstacles, and trains policies robust to both the sim-to-real gap and moving obstacles.
         </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="boost_stop()" onmouseover="boost_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle;">
+        <div class="one">
+          <div class="two" id='boost_image'>
+            <video style="object-fit: cover;" width=100% height=100% muted autoplay loop>
+              <source src="images/boost.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video></div>
+          <img src='images/BooST.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function boost_start() {
+            document.getElementById('boost_image').style.opacity = "1";
+          }
+
+          function boost_stop() {
+            document.getElementById('boost_image').style.opacity = "0";
+          }
+          boost_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://boost-robots.github.io/">
+          <span class="papertitle">BooST: Bridging Semantics and Motions for Efficient Skill Transfer</span>
+        </a>
+        <br>
+        Jusuk Lee, Daesol Cho, Jonghun Shin, <strong>Seungyeon Yoo</strong>, Jonghae Park, Taekbeom Lee, H. Jin Kim
+        <br>
+        <em>RA-L</em>, 2026
+        <br>
+        <a href="https://boost-robots.github.io/">project page</a>
+        /
+        <!-- <a href="https://ieeexplore.ieee.org/document/11141529">paper</a> -->
+        <p></p>
+        <p>BooST learns a unified skill representation that bridges semantic intent (what) and motion dynamics (how), then distills it into a lightweight policy — enabling few-shot adaptation across new scenes, tasks, and even cross-embodiments, with robustness to dynamic visual distractors.</p>
       </td>
     </tr>
 
